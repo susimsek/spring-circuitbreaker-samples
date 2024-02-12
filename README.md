@@ -5,7 +5,7 @@ Circuit Breaker Samples using Spring Boot
 
 # Circuit Breaker
 
-Circuit Breaker is implemented via a finite state machine with three states: CLOSED, OPEN and HALF_OPEN.
+Circuit Breaker is implemented via a finite state machine with three states: CLOSED, OPEN and HALF_OPEN.  
 
 <img src="https://github.com/susimsek/spring-circuitbreaker-samples/blob/main/images/circuit-breaker.png" alt="Spring Boot Circuit Breaker" width="100%" height="100%"/>  
 
