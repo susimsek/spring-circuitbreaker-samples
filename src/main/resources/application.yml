@@ -38,3 +38,8 @@ springdoc:
   show-actuator: true
   cache:
     disabled: true
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      register-health-indicator: true
