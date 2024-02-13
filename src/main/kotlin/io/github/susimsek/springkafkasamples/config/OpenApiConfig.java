@@ -41,4 +41,13 @@ public class OpenApiConfig {
             .pathsToMatch("/api/v1/circuit-breaker/**")
             .build();
     }
+
+    @Bean
+    public GroupedOpenApi collectionGroup(@Value("${springdoc.version}") String appVersion) {
+        return GroupedOpenApi.builder().group("collection")
+            .addOpenApiCustomizer(openApi -> openApi.info(new io.swagger.v3.oas.models.info.Info()
+                .title("Java Collections Demo API").version(appVersion)))
+            .pathsToMatch("/api/v1/collection/**")
+            .build();
+    }
 }

@@ -6,8 +6,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients
 
 @SpringBootApplication
 @EnableFeignClients
-class SpringKafkaSamplesApplication
+class SpringCircuitBreakerSamplesApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringKafkaSamplesApplication>(*args)
+    runApplication<SpringCircuitBreakerSamplesApplication>(*args)
 }
